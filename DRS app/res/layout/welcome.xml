@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:id="@+id/welcomelay" android:background="#890218">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WELCOME"
+            android:id="@+id/welcome" android:textSize="46dp" android:textAlignment="viewEnd"
+            android:layout_centerHorizontal="true" android:layout_alignParentTop="true"
+            android:layout_marginTop="91dp" android:textColor="#fbfffb"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="74dp"
+            android:text="to DRS"
+            android:id="@+id/todrs" android:layout_gravity="center" android:textSize="30dp"
+            android:layout_centerHorizontal="true" android:layout_below="@+id/welcome" android:textColor="#faffff"/>
+    <ImageView
+            android:layout_width="169dp"
+            android:layout_height="302dp"
+            android:id="@+id/doctorimg" android:layout_alignParentLeft="true" android:layout_marginLeft="25dp"
+            android:layout_marginTop="240dp"
+            android:background="@drawable/doctorimage" android:layout_toLeftOf="@+id/todrs"
+            android:layout_marginBottom="100dp"/>
+    <Button
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:id="@+id/doctor" android:background="@drawable/doctor"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="154dp" android:layout_alignParentTop="true"
+            android:layout_marginTop="278dp"/>
+    <Button
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:id="@+id/patient" android:layout_alignRight="@+id/doctor" android:layout_alignParentTop="true"
+            android:layout_marginTop="337dp" android:background="@drawable/patient"
+            android:layout_marginLeft="134dp"/>
+</RelativeLayout>

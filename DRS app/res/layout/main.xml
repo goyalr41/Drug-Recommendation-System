@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:id="@id/mainlayo" android:background="#fdffdf">
+    <view android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          class="Library.ActionBar" android:id="@+id/actionbar" android:layout_gravity="left|center_vertical"
+          style="@style/ActionBar"/>
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                          android:layout_height="45dp" android:background="#881010" android:id="@+id/linearLayout1">
+                <TextView android:layout_width="290dp" android:layout_height="fill_parent" android:text="Basic Details"
+                          android:id="@+id/textView" android:textColor="#f0f0f0" android:layout_marginLeft="5dp"
+                          android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:textSize="18dp"/>
+            </LinearLayout>
+            <TextView android:layout_width="fill_parent" android:layout_height="1dp" android:id="@+id/textView3"
+                      android:background="#2d1744" android:capitalize="none"/>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <EditText
+                        android:layout_width="290dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/name" android:hint="Patient Name" android:textColorHint="#494949"
+                        android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+                        android:textSize="18dp" android:textColor="#110e11" android:focusable="true"
+                        android:focusableInTouchMode="true"/>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                    <EditText android:layout_width="180dp" android:layout_height="wrap_content" android:id="@+id/age"
+                              android:hint="Age" android:textColorHint="#494949" android:inputType="number"
+                              android:layout_marginLeft="5dp" android:layout_marginTop="5dp"
+                              android:layout_marginBottom="5dp" android:textSize="18dp" android:textColor="#110e11"/>
+                    <Button
+                            android:layout_width="140dp"
+                            android:layout_height="40dp"
+                            android:text="Gender"
+
+                            android:id="@+id/sex" android:layout_gravity="right|center_vertical"
+
+                            android:layout_marginLeft="15dp" android:background="#0f5588" android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                              android:layout_height="fill_parent" android:id="@+id/linearLayout">
+                    <Button android:layout_width="140dp" android:layout_height="40dp" android:text="Smoking"
+                            android:id="@+id/smoking" android:layout_gravity="right|center_vertical"
+                            android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+                            android:background="#0f5588"/>
+                    <Button
+                            android:layout_width="140dp"
+                            android:layout_height="fill_parent"
+                            android:text="Drinking"
+                            android:id="@+id/drinking" android:layout_marginLeft="50dp" android:layout_marginTop="5dp"
+                            android:layout_marginRight="10dp" android:layout_marginBottom="5dp" android:background="#0f5588"
+                            style="@android:style/Holo.Light.SegmentedButton"/>
+                </LinearLayout>
+                <EditText android:layout_width="290dp" android:layout_height="wrap_content" android:id="@+id/BMI"
+                          android:hint="Body Mass Index" android:textColorHint="#494949" android:layout_marginLeft="5dp"
+                          android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:textSize="18dp"
+                          android:textColor="#110e11" android:inputType="numberDecimal"/>
+            </LinearLayout>
+            <TextView android:layout_width="fill_parent" android:layout_height="1dp" android:id="@+id/textView6"
+                      android:background="#2d1744"/>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:id="@+id/disLL">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:background="#891212"
+                        android:layout_height="45dp">
+                    <TextView
+                            android:layout_width="320dp"
+                            android:layout_height="fill_parent"
+                            android:text="Disease"
+                            android:id="@+id/Disease" android:textColor="#f0f0f0" android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+                            android:textIsSelectable="true" android:textAlignment="center"
+                            android:background="#881010" android:textSize="18dp"/>
+                    <Button
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/displus" android:layout_gravity="center" android:background="@drawable/plus_sign"
+                            />
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                    <EditText
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/disease1" android:textColor="#000001" android:textColorHint="#474747"
+                            android:hint="Input First Disease" android:layout_marginLeft="5dp" android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp" android:textSize="18dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:layout_width="fill_parent" android:layout_height="1dp" android:id="@+id/textView4"
+                      android:background="#2d1744"/>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:id="@+id/alerLL">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45dp"
+                              android:background="#881010">
+                    <TextView android:layout_width="320dp" android:layout_height="fill_parent" android:text="Allergy"
+                              android:id="@+id/textView2" android:textColor="#f0f0f0"
+                              android:layout_marginLeft="5dp" android:layout_marginTop="5dp"
+                              android:layout_marginBottom="5dp" android:textSize="18dp"/>
+                    <Button android:layout_width="20dp" android:layout_height="20dp"
+                            android:id="@+id/allerplus" android:layout_gravity="center"
+                            android:background="@drawable/plus_sign"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:layout_width="fill_parent" android:layout_height="1dp" android:id="@+id/textView5"
+                      android:background="#2d1744"/>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:id="@+id/prevLL">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45dp"
+                              android:background="#881010">
+                    <TextView android:layout_width="320dp" android:layout_height="fill_parent" android:text="Current Drugs Taken"
+                              android:id="@+id/textView1" android:textColor="#f0f0f0"
+                              android:layout_marginLeft="5dp" android:layout_marginTop="5dp"
+                              android:layout_marginBottom="5dp" android:textSize="18dp"/>
+                    <Button android:layout_width="20dp" android:layout_height="20dp"
+                            android:id="@+id/prevplus" android:layout_gravity="center" android:background="@drawable/plus_sign"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:layout_width="fill_parent" android:layout_height="1dp" android:id="@+id/textView8"
+                      android:background="#2d1744"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                          android:layout_height="45dp" android:background="#881010" android:id="@+id/linearLayout2">
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/linearLayout2"
+              android:background="#fdffdf">
+    <view class="Library.ActionBar" style="@style/ActionBar" android:layout_width="wrap_content"
+          android:layout_height="wrap_content" android:id="@+id/actionbar"
+          android:layout_gravity="left|center_vertical"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <TextView android:layout_width="180dp" android:layout_height="5dp"
+                  android:id="@+id/button1up" android:background="#0f5588" android:layout_marginLeft="0dp"/>
+        <TextView android:layout_width="180dp" android:layout_height="5dp"
+                  android:id="@+id/button2up" android:background="#881010"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp">
+        <Button android:layout_width="180dp" android:layout_height="fill_parent" android:text="Semantic"
+                android:id="@+id/semantic" android:layout_gravity="center"
+                android:background="#881010"
+                />
+        <TextView
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/textView8" android:layout_gravity="center_horizontal|bottom"
+                android:background="#f0f0f0"/>
+        <Button android:layout_width="180dp" android:layout_height="fill_parent" android:text="Mining"
+                android:id="@+id/mining"
+                android:background="#881010"
+                android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_marginBottom="10dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                      android:layout_height="wrap_content" android:background="#fdffdf"
+                      android:layout_marginTop="20dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                          android:layout_height="30dp" android:background="#0f5588"
+                          android:layout_marginLeft="15dp" android:layout_marginRight="15dp"
+                          android:id="@+id/linearlay1">
+                <TextView android:layout_width="280dp" android:layout_height="25dp" android:id="@+id/drugname1"
+                          android:textColorHint="#f0f0f0"
+                          android:textSize="18dp"
+                          android:textColor="#f0f0f0"
+                          android:textAlignment="center" android:text="Drug1"/>
+                <Button android:layout_width="20dp" android:layout_height="20dp" android:id="@+id/resultbutt1"
+                        android:layout_gravity="center" android:background="@drawable/ic_action_edit"
+                        android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                          android:layout_height="30dp" android:background="#0f5588" android:layout_marginLeft="15dp"
+                          android:layout_marginRight="15dp" android:id="@+id/linearlay2"
+                          android:layout_marginTop="20dp">
+                <TextView android:layout_width="280dp" android:layout_height="30dp" android:id="@+id/drugname2"
+                          android:textColorHint="#f0f0f0" android:textSize="18dp"
+                          android:textColor="#f0f0f0" android:textAlignment="center" android:text="Drug2"/>
+                <Button android:layout_width="20dp" android:layout_height="20dp"
+                        android:layout_gravity="center" android:background="@drawable/ic_action_edit"
+                        android:layout_marginLeft="10dp" android:id="@+id/resultbutt2"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                          android:layout_height="30dp" android:background="#0f5588" android:layout_marginLeft="15dp"
+                          android:layout_marginRight="15dp" android:id="@+id/linearlay3"
+                          android:layout_marginTop="20dp">
+                <TextView android:layout_width="280dp" android:layout_height="30dp"
+                          android:textColorHint="#000000" android:textSize="18dp"
+                          android:textColor="#f0f0f0" android:textAlignment="center"
+                          android:id="@+id/drugname3" android:text="Drug3"/>
+                <Button android:layout_width="20dp" android:layout_height="20dp"
+                        android:layout_gravity="center" android:background="@drawable/ic_action_edit"
+                        android:layout_marginLeft="10dp" android:id="@+id/resultbutt3"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                          android:layout_height="30dp" android:background="#0f5588" android:layout_marginLeft="15dp"
+                          android:layout_marginRight="15dp" android:id="@+id/linearlay4"
+                          android:layout_marginTop="20dp">
+                <TextView android:layout_width="280dp" android:layout_height="25dp" android:id="@+id/drugname4"
+                          android:textColorHint="#000000" android:textSize="18dp"
+                          android:textColor="#f0f0f0" android:textAlignment="center" android:text="Drug4"/>
+                <Button android:layout_width="20dp" android:layout_height="20dp"
+                        android:layout_gravity="center" android:background="@drawable/ic_action_edit"
+                        android:layout_marginLeft="10dp" android:id="@+id/resultbutt4"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+                          android:layout_height="25dp" android:background="#0f5588" android:layout_marginLeft="15dp"
+                          android:layout_marginRight="15dp" android:id="@+id/linearlay5"
+                          android:layout_marginTop="20dp">
+                <TextView android:layout_width="280dp" android:layout_height="30dp" android:id="@+id/drugname5"
+                          android:textColorHint="#000000" android:textSize="18dp"
+                          android:textColor="#f0f0f0" android:textAlignment="center" android:text="Drug5"/>
+                <Button android:layout_width="20dp" android:layout_height="20dp"
+                        android:layout_gravity="center" android:background="@drawable/ic_action_edit"
+                        android:layout_marginLeft="10dp" android:id="@+id/resultbutt5"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please Click Semantic or Mining Tab"
+                android:id="@+id/textView" android:layout_gravity="left|center_vertical"
+                android:textSize="14dp" android:layout_marginLeft="60dp" android:textColor="#0a1106"
+                android:layout_marginBottom="1dp" android:layout_marginTop="200dp"
+                android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>
